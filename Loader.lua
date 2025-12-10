@@ -1,7 +1,9 @@
 repeat wait() until game:IsLoaded() 
-local Place = game.PlaceId
-if Place == 15601725874 then
+
+if getgenv().map == "ASC" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/arxdsdd07-arch/script/refs/heads/main/Protected_1379384898613797.lua"))()
-else
+elseif getgenv().map == "AUV" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/arxdsdd07-arch/script/refs/heads/main/auv.lua"))()
+else
+    warn('')
 end
